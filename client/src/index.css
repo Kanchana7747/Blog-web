@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --primary-dark: #1E3A5F; /* Deep Navy */
+    --primary-light: #4B9CD3; /* Teal */
+    --background-light: #F8F9FA; /* Soft Warm Gray */
+    --white: #FFFFFF;
+    --accent-red: #E63946; /* Brighter red */
+    --accent-green: #28A745; /* Vibrant green */
+    --grey: #E5E7EB; /* Soft grey */
+    --button-hover: #3A86FF; /* Bright blue */
+}
+
+body {
+    background-color: var(--background-light);
+}
+
+.header {
+    margin-bottom: 50px;
+    background-image: linear-gradient(to bottom, var(--primary-light), var(--background-light));
+}
+
+.header-text-quote {
+    color: var(--primary-dark);
+}
+
+.link {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.google-profile {
+    background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+    margin: 0px 50px;
+    padding: 20px 0px;
+    color: var(--white);
+    border-radius: 40px;
+}
+
+.role-radio {
+    background-color: var(--grey);
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.author-profile ul a.active {
+    background-image: linear-gradient(to bottom, var(--primary-light), var(--primary-dark));
+    border-radius: 28px;
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.user-button .role {
+    color: var(--white);
+    background-color: var(--accent-green);
+    font-weight: 400;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+}
+
+.user-button .user-name {
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+}
+
+.signout-btn {
+    border: none;
+    margin-left: 10px;
+    color: var(--accent-red);
+    background-color: transparent;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 400;
+    border: 1px solid var(--accent-red);
+}
+
+/* Read Article Button */
+.custom-btn {
+    box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+    background: linear-gradient(to bottom, var(--primary-light) 5%, var(--button-hover) 100%);
+    border-radius: 6px;
+    border: 1px solid var(--primary-light);
+    display: inline-block;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background: linear-gradient(to bottom, var(--button-hover) 5%, var(--primary-light) 100%);
+}
+
+.custom-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Article Card */
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--white);
+}
+
+/* Article Content */
+.article-content {
+    text-indent: 100px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.article-content::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: var(--accent-red);
+}
+
+/* Add Article Button */
+.add-article-btn {
+    background-color: var(--accent-green);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Author Section */
+.author-block {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+/* Comments */
+.comments .user-name {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+}
+
+.comments .comment {
+    margin-left: 40px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.bg-footer {
+    background-color: var(--primary-dark);
+    padding: 50px 0 30px;
+}
+
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: var(--grey);
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: var(--accent-green);
+}
+
+.contact-info {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.footer-alt {
+    color: var(--grey);
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid var(--accent-green);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
